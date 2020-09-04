@@ -1,7 +1,8 @@
 # Aula 01: Motivação e Introdução
 
 ## Vídeos:
-	1. [Meu primeiro programa em C++](https://youtu.be/HFO-9gBz5uo)
+
+1. [Meu primeiro programa em C++](https://youtu.be/HFO-9gBz5uo)
 
 ## Exercícios
 
