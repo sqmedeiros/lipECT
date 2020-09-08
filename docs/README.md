@@ -1,21 +1,22 @@
 # Slides Aulas Remotas
 
-Este diretório contem alguns slides extras para complementar os videos de LIP
-criados por Éverton. 
+Este diretório contem alguns slides para complementar os vídeos da disciplina LIP.
 
-## template
- - Só um exemplo do uso de revealjs
  
-## 01-intro
+## [01-intro](./01-intro)
+
  - Plano do curso
  - Metodologia 
  - Avaliação
  - Horários, etc
  
-## 02-ling-prog
+## [02-ling-prog](./02-ling-prog)
+
  - Linguagens de programação
  - Processo de compilação (passo a passo)
-## 03-var-tipos
+
+## [03-var-tipos](03-var-tipos)
+
  - Problemas de underflow e overflow 
  - Representação dos valores (R vs float)
  - Problemas de precedência de operadores
