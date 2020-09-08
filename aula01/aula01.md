@@ -6,6 +6,8 @@
 
 ## Exercícios
 
+Lista LoP: LiP - Aula 01 (Código: 2cfce252ad)
+
 1. Imprimir *bom dia, ect*
 	- Nível: Fácil
 	- Plataforma LoP: Bom dia, ECT! (Código: 00aa723083)
