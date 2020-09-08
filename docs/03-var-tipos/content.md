@@ -1,28 +1,3 @@
-<!doctype html>
-<html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-
-        <title>Aula: Linguagem de Programação</title>
-
-        <link rel="stylesheet" href="../dist/reveal.css">
-        <link rel="stylesheet" href="../dist/theme/ect.css" id="theme">
-
-        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
-    </head>
-
-    <body>
-
-        <div class="reveal">
-            <div class='footer'>
-                <img src="../img/logo.png">Linguagem de Programação (ECT-2303).
-            </div>
-
-            <div class="slides">
-                <!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
-                <section data-auto-animate data-markdown data-separator="---">
-                    <textarea data-template>
 
 ### Tipos básicos, variáveis, constantes e expressões
 
@@ -49,7 +24,7 @@ Nesta aula aprenderemos a:
 ---
 
  ### Tipos de Dados
-  - Informações diferentes necessitam de _espaço de memória_ diferentes.
+  - Informações diferentes necessitam de _espaços de memória_ diferentes.
   - Cada tipo organiza as informações de forma diferente. 
 
   ```cpp
@@ -58,15 +33,11 @@ Nesta aula aprenderemos a:
   long N; // inteiros de 8 bytes
   float f ; // 4 bytes
   double d ; // 8 bytes
-
   ```
-
 ---
-
  ### Tipos de Dados
 
  Será que ```int``` e $\mathcal{Z}$ (conjunto dos números inteiros) são iguais?
-
 
  - 1234 + 1 = 1235
  - 15400 + 1 = 15401
@@ -107,13 +78,11 @@ _US $370 milhões de prejuízo!_
 
 [Mais informação](https://www.bbc.com/portuguese/noticias/2015/05/150513_vert_fut_bug_digital_ml).
 
-
 ---
 
 ### Números de ponto flutuante
 
 0.1 + 0.2 = ?
-
 
 ```cpp
 int main(){
@@ -165,7 +134,7 @@ Menor precedência que os operadores artiméticos
 
 ```cpp[1|2|3|4]
 x = 3 + 2 >= 5 / 2
-x = 5 >= 5 / 2
+x = 3 + 2 >= 2
 x = 5 >= 2 
 x = 1
 ```
@@ -205,7 +174,7 @@ int / int = int
 float * float = float
 float - double = double
 char c = 'a';
-int x = c + 1; // char + int = int x = 98
+int x = c + 1; // char + int = int (x = 98)
 ```
 Quando operandos de tipos diferentes são misturados em uma expressão, os valores são convertidos no tipo do _maior operando_.
 
@@ -214,32 +183,3 @@ Quando operandos de tipos diferentes são misturados em uma expressão, os valor
 ### Multiprova
 <https://site.multiprova.ufrn.br/>
 
-
-                    </textarea>
-                </section>
-
-
-            </div>
-        </div>
-
-        <script src="../dist/reveal.js"></script>
-        <script src="../plugin/markdown/markdown.js"></script>
-        <script src="../plugin/highlight/highlight.js"></script>
-        <script src="../plugin/math/math.js"></script>
-        <script src="../plugin/notes/notes.js"></script>
-
-        <script>
-
-            Reveal.initialize({
-                controls: true,
-                progress: true,
-                history: true,
-                center: true,
-                autoPlayMedia: true,
-                plugins: [ RevealMarkdown, RevealMath, RevealHighlight, RevealNotes ]
-            });
-
-        </script>
-
-    </body>
-</html>

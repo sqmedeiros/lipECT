@@ -1,35 +1,8 @@
-<!doctype html>
-<html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-
-        <title>Aula LIP</title>
-
-        <link rel="stylesheet" href="../dist/reveal.css">
-        <link rel="stylesheet" href="../dist/theme/ect.css" id="theme">
-
-        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
-    </head>
-
-    <body>
-
-        <div class="reveal">
-            <div class='footer'>
-                <img src="../img/logo.png">Linguagem de Programação (ECT-2303).
-            </div>
-
-            <div class="slides">
-                <!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
-                <section data-auto-animate data-markdown data-separator="---">
-                    <textarea data-template>
-
 ## Linguagem de Programação (ECT-2303)
 
 ### Introdução e Motivação 
 
 ---
-
 
 ### Horários de Atendimento
 
@@ -174,6 +147,12 @@ Vamos introduzir conceitos de _programação modular_ através do uso de _funç�
 
 ### Cronograma
 
+ - Tipos, operadores, expressões. 
+ - Revisão de estruturas de controle
+ - Funções (parâmetros por valor referência)
+ - Vetores e Matrizes
+ - Algoritmos de ordenação e busca
+ - Tipos Estruturados
 ---
 
 ### Aulas Teóricas
@@ -187,7 +166,7 @@ Vamos introduzir conceitos de _programação modular_ através do uso de _funç�
 ### Aulas Teóricas (Metodologia) 
 
  - Utilizaremos sempre o mesmo link do Google Meeting
- - Antes da aula (no Discord)
+ - Antes da aula (no Discord #aulas)
   - Vídeo (prof. Éverton) explicando o conteúdo
   - Seções sugeridas da apostila 
   - Outras leituras 
@@ -218,21 +197,21 @@ Vamos introduzir conceitos de _programação modular_ através do uso de _funç�
  - 60% Laboratório
 
  - Todas as aulas e todos os laboratório têm nota!
- - O aluno que faltas as aulas/labs, ficará com zero na nota desse dia 
+ - O aluno que faltar as aulas/labs, ficará com zero na nota desse dia 
 
 --- 
 
 ### Avaliação
  - Fraude em um exercício implica zero na nota da unidade!
-
- ![fraude](./img/fraude.png)
+ <center>
+<img src="./img/fraude.png" width=300/>
+</center>
 
 
 ---
 
 ### Bibliografia 
 
- - Ver no Discord
  - C++: Como Programar, de Paul Deiltel e Harvey Deitel. Editora Pearson.
  - MIZRAHI, V. V. Treinamento em Linguagem C++. Pearson, 2008
  - HERBERT, S. C completo e total. 3a. ed. São Paulo: Pearson, 1997. 
@@ -241,7 +220,7 @@ Vamos introduzir conceitos de _programação modular_ através do uso de _funç�
 ---
 
 ### Resultados Esperados
-Após  finalizar o semestre eu espero que melhorem suas habilidades para:
+Após finalizar o semestre, eu espero que melhorem suas habilidades para:
   - _Quebrar um problema grande_ em partes menores.
   - *Abstrair*: identificar a parte essencial de um problema.
   - *Reaproveitar soluções*: utilizar a mesma função várias vezes para solucionar, possivelmente, problemas distintos.
@@ -250,44 +229,3 @@ Após  finalizar o semestre eu espero que melhorem suas habilidades para:
 ---
 ## Sejam Bem-vindos!
 
-  
-
-
-                    </textarea>
-                </section>
-
-
-            </div>
-        </div>
-
-        <script src="../dist/reveal.js"></script>
-        <script src="../plugin/markdown/markdown.js"></script>
-        <script src="../plugin/highlight/highlight.js"></script>
-        <script src="../plugin/math/math.js"></script>
-        <script src="../plugin/notes/notes.js"></script>
-
-        <script>
-
-            Reveal.initialize({
-                controls: true,
-                progress: true,
-                history: true,
-                center: true,
-                autoPlayMedia: true,
-                				math: {
-					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-					config: 'TeX-AMS_HTML-full',
-					TeX: {
-						Macros: {
-							R: '\\mathbb{R}',
-							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
-						}
-					}
-				},
-                plugins: [ RevealMarkdown, RevealMath, RevealHighlight, RevealNotes ]
-            });
-
-        </script>
-
-    </body>
-</html>

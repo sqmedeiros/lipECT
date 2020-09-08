@@ -1,28 +1,3 @@
-<!doctype html>
-<html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-
-        <title>Aula: Linguagem de Programação</title>
-
-        <link rel="stylesheet" href="../dist/reveal.css">
-        <link rel="stylesheet" href="../dist/theme/ect.css" id="theme">
-
-        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
-    </head>
-
-    <body>
-
-        <div class="reveal">
-            <div class='footer'>
-                <img src="../img/logo.png">Linguagem de Programação (ECT-2303).
-            </div>
-
-            <div class="slides">
-                <!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
-                <section data-auto-animate data-markdown data-separator="---">
-                    <textarea data-template>
 
 ## Linguagens de Programação
 
@@ -111,6 +86,8 @@ int main(){ // Main
 }
 ```
 
+---
+
 ### Comentários 
 ```cpp
 // Uma linha
@@ -129,32 +106,3 @@ int main(){ // Main
 #### De código C++ a um programa executável
 <video data-autoplay src="./img/compilar.mp4"></video>
 
-
-
-                    </textarea>
-                </section>
-
-
-            </div>
-        </div>
-
-        <script src="../dist/reveal.js"></script>
-        <script src="../plugin/markdown/markdown.js"></script>
-        <script src="../plugin/highlight/highlight.js"></script>
-        <script src="../plugin/notes/notes.js"></script>
-
-        <script>
-
-            Reveal.initialize({
-                controls: true,
-                progress: true,
-                history: true,
-                center: true,
-                autoPlayMedia: true,
-                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-            });
-
-        </script>
-
-    </body>
-</html>
