@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Aula LIP</title>
+
+        <link rel="stylesheet" href="../dist/reveal.css">
+        <link rel="stylesheet" href="../dist/theme/ect.css" id="theme">
+
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css">
+    </head>
+
+    <body>
+
+        <div class="reveal">
+            <div class='footer'>
+                <img src="../img/logo.png">Linguagem de Programação (ECT-2303).
+            </div>
+
+            <div class="slides">
+                <!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
+                <section data-auto-animate data-markdown data-separator="---">
+                    <textarea data-template>
+
+## Linguagem de Programação (ECT-2303)
+
+### Introdução e Motivação 
+
+---
+
+
+### Horários de Atendimento
+
+- Prof. Turma teórica: Sérgio Medeiros <sqmedeiros@gmail.com>
+- Prof. Laboratório: Francisco Vidal <francisco.vidal@ect.ufrn.br>
+
+- Atendimento Sérgio:
+ - Discord: terças-ferias, das 8h às 9h
+ - Por email
+
+- Monitoria: Vejam o espaço da monitoria no Discord (https://discord.gg/vt6kvSb)
+---
+
+### Por que aprender uma linguagem de programação?
+
+Todos temos que _resolver problemas_. 
+
+Pensar *algoritmicamente* lhe permitirá **solucionar problemas mais rápido**. 
+<!-- .element: class="fragment" -->
+Muitos dispositivos/sistemas podem ser __programados__ 
+<!-- .element: class="fragment" -->
+
+
+Um engenheiro que sabe *usar corretamente* o computador pode realizar tarefas  mais rápido.
+<!-- .element: class="fragment" -->
+
+---
+
+### Será que programar é mesmo importante?
+
+Em 2015, o ensino de computação nos Estados Unidos a partir dos 6 anos tornou-se obrigatório.
+
+<iframe width="383" height="191" src="https://www.youtube.com/embed/6XvmhE1J9PY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
+### Será que programar é mesmo importante?
+[Oportunidades de emprego](https://www.wired.com/2017/02/programming-is-the-new-blue-collar-job/)
+
+Assista: [Por que todos deveriam aprender a programar?](https://www.youtube.com/watch?v=mHW1Hsqlp6A)
+
+>> Everyone should learn how to program a computer because it teaches you how to _think_ (Steve Jobs).
+
+
+ ---
+
+ ### Nossa abordagem
+
+  * _Entender_ o problema a resolver.
+  *  Pensar em uma _sequência  de instruções_
+  *  Agora sim,  _escrever o código_
+
+--- 
+
+### Os problemas que poderemos resolver
+
+ * Tomar decisões (simples e complexas)
+ * Solucionar funções/problemas matemáticos
+ * Simular sistemas simples
+ * Armazenar informação em estruturas de dados
+ * Manipular vetores e matrizes
+ * Ordenar conjuntos de dados. 
+ * Buscar informações em um conjunto de dados. 
+
+---
+
+ ### Atenção!
+
+Não tente escrever um  programa se _não sabe_ como resolver o problema!
+
+A linguagem é só uma ferramenta... por si só não solucionada nada!
+
+--- 
+
+### Exemplo 
+>> Exemplo: Como calcular $\sum\limits_{i=1}^{n} i $ ?
+
+--- 
+
+### Exemplo
+
+>> Exemplo: Como calcular $\sum\limits_{i=1}^{n} i $ ?
+
+```cpp
+soma = 0 ;
+for(int i=1;i<=n;i++)
+  soma += i;
+``` 
+```cpp
+ // Muito mais simples!
+ soma = n * (n+1) / 2.0 ;
+```
+
+--- 
+
+### Objetivos 
+
+Desenvolver a capacidade de _projetar algoritmos_ e **implementá-los** em uma linguagem de programação estruturada
+
+Tornar o aluno apto a _solucionar problemas_ utilizando linguagens de programação estruturadas.
+<!-- .element: class="fragment" -->
+
+Os conceitos serão implementados na linguagem C++. 
+<!-- .element: class="fragment" -->
+
+Vamos introduzir conceitos de _programação modular_ através do uso de _funções e estruturas_.
+<!-- .element: class="fragment" -->
+
+--- 
+
+### Cronograma
+
+Ver o SIGAA.
+
+---
+
+### Aulas Teóricas
+
+ - O aluno deve ver os vídeos relacionados com a aula, de preferência antecipatadamente.
+ - Serão utilizadas para o professor resolver exercícios e esclarer dúvidas.
+ - Salvo situações excepcionais, começam no horário marcado (08h55), no Discord.
+
+---
+
+
+### Práticas de Laboratório
+
+ - As aulas de laboratório não têm como objetivo repetir o conteúdo das aulas teóricas.
+ - Elas consistem, em sua maioria, na resolução de exercícios por parte dos alunos.
+
+--- 
+
+### Práticas de Laboratório (Metodologia)
+ - O professor Vidal enviará maiores detalhes.
+
+---
+
+### Avaliação e Frequêcia
+
+                       
+ - 60% Teóricas
+ - 40% Laboratório
+
+ - Para ter a frequência de uma aula teórica, o aluno deve resolver dois exercícios da respectiva lista na plataforma LoP (Turma LiP 2 - 2020.1, Código: c818ff0850)
+ - Todas as aulas de laboratório têm nota!
+ - Algumas aulas teóricas terão atividades avaliativas.
+ - O aluno que faltas as aulas/labs avaliativos, ficará com zero na nota desse dia 
+
+--- 
+
+### Avaliação
+ - Fraude em um exercício implica zero na nota da unidade!
+
+ ![fraude](./img/fraude.png)
+
+
+---
+
+### Bibliografia 
+
+ - Apostila de LiP disponibilizada na página da turma no SIGAA.
+ - C++: Como Programar, de Paul Deiltel e Harvey Deitel. Editora Pearson.
+ - MIZRAHI, V. V. Treinamento em Linguagem C++. Pearson, 2008
+ - HERBERT, S. C completo e total. 3a. ed. São Paulo: Pearson, 1997. 
+ - ASCENCIO, A, F. G.; DE CAMPOS, E. A. V. Fundamentos da programação de computadores.  Pearson Education, 2008
+
+---
+
+### Resultados Esperados
+Após  finalizar o semestre eu espero que melhorem suas habilidades para:
+  - _Quebrar um problema grande_ em partes menores.
+  - *Abstrair*: identificar a parte essencial de um problema.
+  - *Reaproveitar soluções*: utilizar a mesma função várias vezes para solucionar, possivelmente, problemas distintos.
+  - *Solucionar problemas* utilizando uma linguagem de programação.
+
+---
+## Sejam Bem-vindos!
+
+  
+
+
+                    </textarea>
+                </section>
+
+
+            </div>
+        </div>
+
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script src="../plugin/math/math.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+
+        <script>
+
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                autoPlayMedia: true,
+                				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				},
+                plugins: [ RevealMarkdown, RevealMath, RevealHighlight, RevealNotes ]
+            });
+
+        </script>
+
+    </body>
+</html>
