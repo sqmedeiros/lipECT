@@ -20,7 +20,7 @@
 
 ## Exercícios
 
-Lista LoP: LiP Aula 02 - Expressões e Comandos de Seleção
+Lista LoP: LiP Aula 02 - Expressões e Comandos de Seleção (Código: f655f05da6)
 
 1. Média de três números inteiros
 	- Nível: Fácil
