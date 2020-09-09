@@ -178,7 +178,39 @@ int x = c + 1; // char + int = int (x = 98)
 ```
 Quando operandos de tipos diferentes são misturados em uma expressão, os valores são convertidos no tipo do _maior operando_.
 
+---
+
+#### Operadores Incremento e Decremento (9:15)
+
+---
+
+<iframe width="1154" height="650" src="https://www.youtube.com/embed/X8VLMjGAupg?list=PLLjLO9s7KS4UBrOBelz0GyfiFn4CSqquH" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 --- 
+
+### Pré-fixado vs Pós-fixado
+
+```cpp
+a = 1;
+b = 2;
+c = ++a * b++; 
+// Imprime 2,3,4
+cout << a << " , " << b << " , " << c;  
+```
+
+Podemos interpretar `c = ++a * b++; ` como:
+
+<!-- .element: class="fragment" -->
+
+```cpp
+a +=1; //primeiro incrementar a
+c = a * b ; // utilizar o valor atual de a(2) e  b(2)
+b +=1 ; // depois incrementar b
+```
+
+<!-- .element: class="fragment" -->
+
+---
 ## TEST!
 ### Multiprova
 <https://site.multiprova.ufrn.br/>
