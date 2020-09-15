@@ -21,3 +21,12 @@ Este diretório contem alguns slides para complementar os vídeos da disciplina 
  - Representação dos valores (R vs float)
  - Problemas de precedência de operadores
  - Casting em expressões 
+
+## [04-seleção](04-comandos-seleção)
+ - Estruturas de seleção
+ - Comandos if-else e switch
+
+## [05-repetição](05-repetição)
+ - Estruturas de repetição
+ - Comandos for e while
+ - Comandos break e continue
