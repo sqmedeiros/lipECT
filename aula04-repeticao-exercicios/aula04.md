@@ -9,7 +9,7 @@ estruturas de repetição.
 
 ## Exercícios
 
-Lista LoP: LiP Aula 04 - Exercícios Comandos de Repetição (Código: )
+Lista LoP: LiP Aula 04 - Exercícios Comandos de Repetição (Código: effa66f856)
 
 
 1. Calcular todos os números perfeitos menores do que N (laços aninhados).
