@@ -8,7 +8,7 @@
 
 ## Exercícios
 
-Lista LoP: LiP Aula 06 - Funções: procedimento e passagem de parâmetro (Código: ca082384c9)
+Lista LoP: LiP Aula 06 - Funções: procedimento e passagem de parâmetro (Código: d68800e480)
 
 1. Procedimento que imprime a tabuada de um número **N**. Programa imprime a tabuada de 1 a 10.
 	- Nível: Fácil
