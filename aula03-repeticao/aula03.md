@@ -2,18 +2,18 @@
 
 ## Vídeos:
 
-1. O comando de repetição for: https://youtu.be/dc_4nJilfTs
-2. O comando de repetição while: https://youtu.be/gPmA43hnPhM
-3. O comando de repetição do while: https://youtu.be/BPml3SkrQvY
-4. Diferenças entre o for, while e do-while: https://youtu.be/c6LrJP0JYJY
-5. Os comandos break e continue: https://youtu.be/K4Wop7eTO1I
-6. Exercício de revisão - calculando o IMC: https://youtu.be/h2UcheOkkAk
-7. Laços de repetição e a aproximação da função cosseno: https://youtu.be/566rD_of6NU
+1. [O comando de repetição for](https://youtu.be/dc_4nJilfTs)
+2. [O comando de repetição while](https://youtu.be/gPmA43hnPhM)
+3. [O comando de repetição do while](https://youtu.be/BPml3SkrQvY)
+4. [Diferenças entre o for, while e do-while](https://youtu.be/c6LrJP0JYJY)
+5. [Os comandos break e continue](https://youtu.be/K4Wop7eTO1I)
+6. [Exercício de revisão - calculando o IMC](https://youtu.be/h2UcheOkkAk)
+7. [Laços de repetição e a aproximação da função cosseno](https://youtu.be/566rD_of6NU)
+
 
 ## Exercícios
 
 Lista LoP: LiP Aula 03 - Comandos de Repetição (Código: d208cce6c4)
-
 
 1. Calcular a média de uma sequência de valores
 	- Nível: Fácil
