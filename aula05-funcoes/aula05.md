@@ -1,10 +1,11 @@
 # Aula 05: Funções (chamada, assinatura e definição)  
 
+
 ## Vídeos:
 
-Sem vídeos. O conteúdo já foi exposto na aula anterior.
-A aula é para a resolução de exercícios relacionados a
-estruturas de repetição.
+1. [O que é uma função](https://youtu.be/9S32uN23u5Q)
+2. [Como criar minha própria função (exemplo calculando uma PG)](https://youtu.be/XDPudzItdd8)
+3. [Calculando a probabilidade de acertar na Megasena]https://youtu.be/I67p4RNXj58)
 
 
 ## Exercícios
