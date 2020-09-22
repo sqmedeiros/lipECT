@@ -1,4 +1,4 @@
-# Aula 02: 
+# Aula 02: Tipos, Operadores, Comandos de Seleção
 
 ## Vídeos:
 
@@ -7,7 +7,7 @@
 3. [Revisão sobre operadores e expressões](https://youtu.be/rF7Xq7F8Qw0)
 4. [Operador de conversão forçada (casting)](https://youtu.be/aJHJGCuNDhc)
 5. [Operadores de incremento e decremento](https://youtu.be/X8VLMjGAupg)
-6. [O Comando de seleção if](https://youtu.be/Os0RC80O0ko)
+6. [O Comando de seleção if](https://youtu.be/vQk0r3l_-w0)
 7. [O comando de seleção switch](https://youtu.be/BKZIi9Ed0U4)
 8. [O operador ternário](https://youtu.be/DkxusQM2P08)
 
