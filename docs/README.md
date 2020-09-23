@@ -3,30 +3,34 @@
 Este diretório contem alguns slides para complementar os vídeos da disciplina LIP.
 
  
-## [01-intro](./01-intro)
+## [01 Introdução](./01-intro)
 
  - Plano do curso
  - Metodologia 
  - Avaliação
  - Horários, etc
  
-## [02-ling-prog](./02-ling-prog)
+## [02 Linguagens de Programação](./02-ling-prog)
 
  - Linguagens de programação
  - Processo de compilação (passo a passo)
 
-## [03-var-tipos](03-var-tipos)
+## [03 Variáveis, tipos e expressões](03-var-tipos)
 
  - Problemas de underflow e overflow 
  - Representação dos valores (R vs float)
  - Problemas de precedência de operadores
  - Casting em expressões 
 
-## [04-seleção](04-if)
+## [04 Comandos de Seleção](04-if)
  - Estruturas de seleção
  - Comandos if-else e switch
 
-## [05-repetição](05-loop)
+## [05 Comandos de Repetição](05-loop)
  - Estruturas de repetição
  - Comandos for e while
  - Comandos break e continue
+
+## [06 Funções](06-funcoes)
+ - Funções
+ - Procedimentos
