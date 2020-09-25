@@ -181,7 +181,7 @@ int main(){
 
 ### Um exemplo (Fatorial)
 
-4. Utilizar a função (para calular `!!n`)
+4. Utilizar a função (para calular `n!!`)
 ```cpp
 int main(){
     int n, res;
@@ -462,8 +462,6 @@ int main(){
 
 ```cpp
 int main(){
-    int num;
-    cin >> num;
     termosFib(20); // Chamar a função
     return 0;
 }
