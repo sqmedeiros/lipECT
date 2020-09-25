@@ -10,10 +10,10 @@
 
 Lista LoP: LiP Aula 06 - Funções: procedimento e passagem de parâmetro (Código: d68800e480)
 
-1. Procedimento que imprime a tabuada de um número **N**. Programa imprime a tabuada de 1 a 10.
+1. Procedimento que imprime a tabuada de um número **N**. Programa imprime a tabuada de 1 a 9.
 	- Nível: Fácil
-	- Plataforma LoP: Tabuada de 1 a 10 (Código: 2df784876d)
-	- GitLab: [tabudada-de-todos-os-numeros](https://gitlab.com/carlos_olarte/ect-lip/-/tree/master/funcoes/facil/tabudada-de-todos-os-numeros)
+	- Plataforma LoP: Tabuada de 1 a 9 (Código: b8c03b5473)
+	- GitLab: [tabudada-1-a-9](https://gitlab.com/carlos_olarte/ect-lip/-/tree/master/funcoes/facil/tabuada-1-a-9)
 
 2. Função para calcular o resto e o quociente de uma divisão inteira.
 	- Nível: Fácil
