@@ -777,9 +777,9 @@ void printTime(int S);
 void printTime(int S){
     int s,m,h;
     time(S,s,m,h);
-    cout << (h<9 ? "0" : "") << h << ":" <<
-            (m<9 ? "0" : "") << m << ":" <<
-            (s<9 ? "0" : "") << s << endl;
+    cout << (h <= 9 ? "0" : "") << h << ":" <<
+            (m <= 9 ? "0" : "") << m << ":" <<
+            (s <= 9 ? "0" : "") << s << endl;
 }
 ```
 - O resultado será armazenado nas __variáveis locais__ da função `printTime`
@@ -803,3 +803,172 @@ int main(){
 
 ### Teste!
 <https://multiprova.ufrn.br/>
+
+---
+
+## Aula 04
+### Revisão
+
+---
+
+### Problema: Dígitos
+Dado um número inteiro positivo `n`, implementar uma função que retorne as
+seguintes informações: 
+
+ - O número de dígitos pares de `n`
+ - O número total de dígitos
+
+---
+
+### Problema: Dígitos
+
+Entradas e saídas:
+ - __Entrada__: O número `n` (tipo `int`)
+ - __Saídas__: 2 números inteiros (dígitos pares e total de dígitos)
+
+#### 3 possíveis protótipos (Opção No 1)
+```cpp
+void infoDigito1(int n, int &dpares, int &tdigitos);
+```
+
+- A função não retorna nada (`void`)
+- Consideramos 3 parâmetros:
+ - A entrada `n` (parâmetro por _valor_)
+ - e as duas saídas (parâmetros por _referência_)
+
+---
+### Problema: Dígitos
+
+#### 3 possíveis protótipos (Opção No 2)
+```cpp
+int infoDigito2(int n, int &tdigitos);
+```
+
+- A função retorna o número de dígitos pares (`int`)
+- Consideramos 2 parâmetros:
+ - A entrada `n` (parâmetro por _valor_)
+ - o total de dígitos (parâmetro por _referência_)
+
+---
+
+### Problema: Dígitos
+#### 3 possíveis protótipos (Opção No 3)
+```cpp
+int infoDigito3(int n, int &dpares);
+```
+
+- A função retorna o número total de dígitos (`int`)
+- Consideramos 2 parâmetros:
+ - A entrada `n` (parâmetro por _valor_)
+ - o total de dígitos pares (parâmetro por _referência_)
+
+---
+
+### Problema: Dígitos
+#### Definição da função (Opção No 1)
+
+```cpp
+void infoDigito1(int n, int &dpares, int &tdigitos){
+    int d; // Variável local
+    dpares=0;
+    tdigitos=0;
+    while(n>0){
+        d = n % 10; // Próximo dígito
+        tdigitos ++; // Dígitos totais
+        if (d %2 ==0) dpares++; // Dígitos pares
+
+        n /= 10 ; // próximo valor de n
+    }
+}
+```
+- A função __não__ retorna um valor
+- Zeramos os 2 parâmetros por referência 
+---
+
+### Problema: Dígitos
+#### Definição da função (Opção No 2)
+
+```cpp
+int infoDigito2(int n,  int & tdigitos){
+    int d; // Variável local
+    int dpares=0; // Variável local!
+    tdigitos=0;
+    while(n>0){
+        d = n % 10; // Próximo dígito
+        tdigitos ++; // Dígitos totais
+        if (d %2 ==0) dpares++; // Dígitos pares
+
+        n /= 10 ; // próximo valor de n
+    }
+    return dpares;
+}
+```
+- A função retorna o valor da __variável local__ `dpares`
+
+--- 
+### Problema: Dígitos
+#### Definição da função (Opção No 3)
+
+```cpp
+int infoDigito3(int n, int & dpares){
+ int d; // Variável local
+ dpares=0; // Variável local!
+ int tdigitos=0;
+    
+ ...
+
+ return tdigitos;
+}
+```
+- A função retorna o valor da __variável local__ `tdigitos`
+
+--- 
+### Problema: Dígitos
+
+#### Chamando a função (Opção No 1)
+
+```
+int main (){
+ int n, dp, td;
+ n = 1023456;
+ infoDigito1(n, dp, td); // Sem retorno
+ cout << n << ": " << dp << " , " << td << endl;
+ return 0;
+}
+```
+
+--- 
+### Problema: Dígitos
+
+#### Chamando a função (Opção No 2)
+
+```
+int main (){
+ int n, dp, td;
+ n = 1023456;
+ dp = infoDigito2(n, td); // Retorna dígitos pares
+ cout << n << ": " << dp << " , " << td << endl;
+ return 0;
+}
+```
+
+
+--- 
+### Problema: Dígitos
+
+#### Chamando a função (Opção No 3)
+
+```
+int main (){
+ int n, dp, td;
+ n = 1023456;
+ td = infoDigito3(n, dp); // Retorna total de dígitos
+ cout << n << ": " << dp << " , " << td << endl;
+ return 0;
+}
+```
+
+---
+
+### Teste!
+<https://multiprova.ufrn.br>
