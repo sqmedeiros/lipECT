@@ -38,3 +38,7 @@ Este diretório contem alguns slides para complementar os vídeos da disciplina 
 ## [07 Vetores](07-vetores)
  - Declaração e inicialização.
  - Exercícios (sem funções)
+
+## [08 Strings](08-strings)
+ - Leitura e Escrita
+ - Exemplos de utilização 
