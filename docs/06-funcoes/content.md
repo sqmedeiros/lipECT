@@ -972,3 +972,408 @@ int main (){
 
 ### Teste!
 <https://multiprova.ufrn.br>
+
+---
+
+## Aula Revisão
+
+---
+
+### Exercício Inverte-X (Revisão)
+
+Escreva uma função que recebe como parâmetro um número inteiro x. A função deve
+utilizar um parâmetro por referência para informar o valor de x invertido (por
+exemplo, 123 -> 321). A função também deve retornar:
+
+ * -1 se o número x é menor que o número x invertido ;
+ * 0 se x e o número invertido são iguais;
+ * 1 caso contrario.
+
+---
+#### Alguns erros comuns 
+O que está errado neste protótipo de função?
+
+```cpp
+void invertidin(int x);
+```
+
+---
+#### Alguns erros comuns 
+O que está errado neste protótipo de função?
+
+```cpp
+void invertidin(int x);
+```
+- Esta função __deve__ retornar um `int`
+- O número invertido __deve__ ser armazenado em um parâmetro (_referência_). 
+
+---
+#### Alguns erros comuns 
+O que está errado neste código?
+
+```cpp
+int main (){
+    int num, resto,numInv;
+
+    cout << "Informe um numero:" << endl;
+    cin >> num;
+
+    while(num>0){
+        resto=num%10;
+        ...
+```
+
+---
+#### Alguns erros comuns 
+O que está errado neste código?
+
+```cpp
+int main (){
+    int num, resto,numInv;
+
+    cout << "Informe um numero:" << endl;
+    cin >> num;
+
+    while(num>0){
+        resto=num%10;
+        ...
+```
+
+- A lógica para calcular o número invertido __não deve estar na `main`__
+---
+#### Alguns erros comuns 
+O que está errado neste código?
+
+```cpp
+int invers (int x , int &y);
+...
+
+int invers(int x, int &y){
+
+     int n_invert; // Armazenar o número invertido
+     ...
+     return n_invert;
+}
+```
+---
+
+#### Alguns erros comuns 
+O que está errado neste código?
+
+```cpp
+int invers (int x , int &y);
+...
+
+int invers(int x, int &y){
+
+     int n_invert; // Armazenar o número invertido
+     ...
+     return n_invert;
+}
+```
+- O número invertido __não deve ser retornado__. 
+- O parâmetro `y` deve ser utilizado para __armazenar o resultado__.
+---
+
+#### Solução
+
+Entradas e saídas: 
+
+```cpp
+int inverteX(int x, int &xi);
+```
+
+- `x`: parâmetro (valor) de __entrada__
+- `xi`: parâmetro (*referência*) de __saída__
+- `int`: tipo de retorno (-1, 0 ou 1)
+
+---
+
+#### Solução
+
+Como inverter um número?
+
+```cpp
+// xi = 0
+// 123 % 10 --> 3 (último dígito)
+// xi = xi * 10 + 3 = 3
+// 123 / 10 --> 12 (próximo valor)
+// 12 % 10 --> 2
+// xi = xi * 10 + 2 = 30 + 2 = 32
+// 12 / 10 --> 1
+// 1 % 10 --> 1
+// xi = xi * 10 + 1 = 320 + 1 = 321
+// 1 / 10 --> 0  (termina)
+```
+---
+
+#### Solução
+
+Como inverter um número?
+
+```cpp
+int inverteX(int x, int &xi) {
+    int xa = x, res;
+    xi = 0; // Inicializar xi
+    while(x > 0){ // calcular x invertido em xi
+        res = x % 10;
+        xi = xi*10 + res;
+        x /= 10;
+    }
+    if(xa < xi) // retornar segundo o valor de xi
+        return -1;
+    else if(xa == xi)
+        return 0;
+    else
+        return 1;
+}
+
+```
+---
+
+#### Solução
+
+Utilizar a função na main
+
+```cpp
+int main()
+{
+    int num, inv, comp;
+    cin >> num;
+    comp = inverteX(num,inv); // Chamar a função
+    cout << "X = " << x << endl << 
+            "X invertido = " << inv << endl;
+    if(comp == -1)
+        cout << "X é menor que X invertido";
+    else if(comp == 0)
+        cout << "X é igual que X invertido";
+    else if(comp == 1)
+        cout << "X é maior que X invertido";
+    return 0;
+}
+```
+---
+
+### Sequência S-primo (Revisão)
+
+Dizemos que uma sequência de números naturais é "sprimo" se o somatório dos
+números primos da sequência é também um número primo.  
+Implemente uma função `ehSPrimo` que recebe dois números inteiros, x e y, e
+retorna verdadeiro se a sequência de números no intervalo [x, y] é sprimo. 
+```
+Entrada: 1 10
+Saída : sim (Note que 2+3+5+7 = 17, que é primo).
+```
+---
+### Sequência S-primo
+#### Erros comuns 
+
+O que está errado neste código?
+```cpp
+int sprimo(int x, int y){
+    int soma = 0;
+    for(x; x <= y; x++){
+        if(eprimo(x) == true){
+            soma = soma + x;
+        }
+    }
+}
+```
+
+---
+### Sequência S-primo
+#### Erros comuns 
+
+O que está errado neste código?
+```cpp
+int sprimo(int x, int y){
+    int soma = 0;
+    for(int i= x; i <= y; i++){
+        if(eprimo(i)){
+            soma = soma + x;
+        }
+    }
+}
+```
+- Falta um `return` para retornar o resultado. 
+- Falta testar se `soma` é primo ou não
+---
+### Sequência S-primo
+#### Erros comuns 
+
+O que está errado neste código?
+```cpp
+bool ehsprimo(int x, int y)
+{
+    int result;
+    for(int i=x; i<=y; i++)
+    {
+        if(primo(i)== true)
+            result +=i;
+    }
+    return result;
+}
+```
+
+---
+### Sequência S-primo
+#### Erros comuns 
+
+O que está errado neste código?
+```cpp
+bool ehsprimo(int x, int y)
+{
+    int result;
+    for(int i=x; i<=y; i++)
+    {
+        if(primo(i)== true)
+            result +=i;
+    }
+    return result;
+}
+```
+- `result` não foi __inicializado__.
+- A função __não deve__ retornar o somatório. 
+- A função é do tipo `bool` e o resultado `int`
+---
+### Sequência S-primo
+#### Erros comuns 
+
+O que está errado neste código?
+
+```cpp
+void ehSPrimo(int x, int y){
+    ...
+    cout << ..... 
+}
+    
+```
+
+---
+### Sequência S-primo
+#### Erros comuns 
+
+O que está errado neste código?
+
+```cpp
+void ehSPrimo(int x, int y){
+    ...
+    cout << ..... 
+}
+    
+```
+- A função deve retornar `true/false` (tipo `bool`)
+- A função __não deve__ imprimir o resultado. 
+---
+
+### Sequência S-primo
+#### Erros comuns 
+
+O que está errado neste código?
+```cpp
+bool ehPrimo(int n){
+    if (n<=1)
+        return false;
+
+    for(int i=2;i < n;i++){
+        if(n%i ==0) return false;
+        else return true ;
+    }
+}
+```
+
+---
+
+### Sequência S-primo
+#### Erros comuns 
+
+O que está errado neste código?
+```cpp
+bool ehPrimo(int n){
+    if (n<=1)
+        return false;
+
+    for(int i=2;i < n;i++){
+        if(n%i ==0) return false;
+        else return true ;
+    }
+}
+```
+
+- `return true` __só depois__ de testar todos os valores!
+---
+
+### Sequência S-primo
+#### Solução
+
+Entradas / Saídas:
+
+```cpp
+bool ehPrimo(int n);
+bool sprimo (int, int);
+```
+
+- `ehPrimo`: dado um `int`, __determina__ (retornando um `bool`) se esse número é primo. 
+- `sprimo`: dados dois inteiros `x` e `y`, determina se a sequência `x, x+1, x+2,...,y` é sprimo. 
+
+---
+
+### Sequência S-primo
+#### Solução
+
+```cpp
+// n um inteiro positivo
+bool ehPrimo(int n)
+{
+  if (n<=1)
+    return false;
+
+  for(int i = 2; i < n; i++)
+  {
+    if(n % i == 0 )
+      return false;
+  }
+  return true;
+}
+```
+---
+
+### Sequência S-primo
+#### Solução
+```cpp
+bool sprimo (int a, int b) {
+	int soma = 0;
+	for (int i = a; i <= b; i++) {
+		if (ehPrimo(i))
+			soma += i;
+	}
+
+	return ehPrimo(soma);
+    // if(ehPrimo(soma)==true) return true else return false;
+}
+```
+---
+
+### Sequência S-primo
+#### Solução
+
+```cpp
+int main()
+{
+  int x, y;
+
+	cin >> x >> y;
+
+  if(sprimo(x,y)) // ou if(sprimo(x,y)==true)
+      cout << "sim" << endl;
+  else
+      cout << "não" << endl;
+
+  return 0;
+}
+```
+
+---
+
+### Teste!
+<https://multiprova.ufrn.br/>
