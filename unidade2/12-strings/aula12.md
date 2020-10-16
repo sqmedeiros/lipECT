@@ -2,7 +2,9 @@
 
 ## Vídeos:
 
-Sem vídeos, aula somente de exercícios.
+1. [Cadeias de caracteres (strings) + função strlen](https://youtu.be/GiDUeuyQqow)
+2. [Funções srtrcat, strcmp e srtcpy](https://youtu.be/mdY_AQogj_E)
+
 
 
 ## Exercícios

@@ -2,7 +2,10 @@
 
 ## Vídeos:
 
-Sem vídeos, aula somente de exercícios.
+1. [O que é um vetor e como utilizar](https://youtu.be/VhLJsebEhDc)
+2. [Exercício resolvido: calculando o produto escalar](https://youtu.be/okiZ9mSy95s)
+3. [Exercício resolvido: gerando o vetor em ordem inversa](https://youtu.be/iOnvTDVyTAc)
+4. [Exercício resolvido: imprimindo um vetor sem repetir valores](https://youtu.be/PZHVaMNO8B8)
 
 
 ## Exercícios
