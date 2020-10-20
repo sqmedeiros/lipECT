@@ -56,15 +56,10 @@ for(i=0;i<3;i++){ // linhas
 ### Inicialização de matrizes
 
 Temos várias alternativas: 
-```cpp
-int m1[4][3] = {{1,2,3}, {4,5,6}, {7,8,9}, {10,11,12}};
 
-int m2[4][3] = {1,2,3,4,5,6,7,8,9,10,11,12};
+<img src=init.png width=700 />
 
-int m3[ ][3] = {1,2,3,4,5,6,7,8,9,10,11,12};
-```
 __O número de colunas deve ser sempre fornecido__
-
 
 ---
 ### Exemplo1: Matriz Identidade
