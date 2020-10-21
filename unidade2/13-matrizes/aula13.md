@@ -2,7 +2,9 @@
 
 ## Vídeos:
 
-Sem vídeos, aula somente de exercícios.
+1. [Utilizando Matrizes](https://youtu.be/L81pdXL1MKc)
+2. [Calculando o traco de uma matriz](https://youtu.be/fmmJVtOVs_Y)
+3. [Representando uma lista de nomes com matrizes](https://youtu.be/QWysVmRs3KA)
 
 
 ## Exercícios
