@@ -363,7 +363,7 @@ int main(){
             cin >> M[i][j];
     }
     // Calcular o min da borda
-    min=M[i][j];
+    min=M[0][0];
 
     // Inferior e superior
     for(j=0 ; j < m ; j++){
