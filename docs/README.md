@@ -42,3 +42,9 @@ Este diretório contem alguns slides para complementar os vídeos da disciplina 
 ## [08 Strings](08-strings)
  - Leitura e Escrita
  - Exemplos de utilização 
+
+## [09 Matrizes](09-matrizes)
+ - Declaração
+ - Manipulação
+ - Problemas simples
+
