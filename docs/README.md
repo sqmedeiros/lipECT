@@ -48,3 +48,6 @@ Este diretório contem alguns slides para complementar os vídeos da disciplina 
  - Manipulação
  - Problemas simples
 
+## [10 Funções e vetores](10-vetores-funcoes)
+ - Vetores e matrizes como parâmetros de funções
+
