@@ -67,7 +67,6 @@ int main (){
 }
 
 void imprimir(int v[], int n) {
-   int i;
    for (int i=0; i < n; i++)
       cout << v[i] << " ";
    cout << endl ;
@@ -79,12 +78,13 @@ void imprimir(int v[], int n) {
 
 ```cpp[1-4|5-12|14-17|19-24]
 #include < iostream>
+#define TAM 200
 using namespace std;
 
 float calcula_media(float notas[], int tamanho);
 
 int main (){
-   int tam; float media, notas[200];
+   int tam; float media, notas[TAM];
    cout << "Qual o tamanho da turma? "; 
    cin >> tam;
 
