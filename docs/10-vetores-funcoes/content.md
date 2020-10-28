@@ -631,9 +631,10 @@ Note que o último parâmetro da função será utilizado como saída:
 int main(){
     int A[TAM][TAM], B[TAM][TAM], C[TAM][TAM];
     int la,ca,cb;
+    cin >> la >> ca >> cb ;
     ler(A, la, ca);
     ler(B, ca, cb);
-    mult(A,B,;a,ca,cb,C);
+    mult(A,B,la,ca,cb,C);
     imprimir(C, a, c);
     return 0;
 }
