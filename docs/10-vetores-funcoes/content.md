@@ -343,3 +343,302 @@ int main()
 ---
 ### Teste!
 <https://multiprova.ufrn.br/>
+
+---
+### Elementos repetidos
+
+Determinar se uma matriz $M$ de dimensão $n \times m$ possui elementos repetidos.
+
+--- 
+
+### Elementos repetidos
+
+- Vamos implementar uma função que, dado um número $x$, retorne o número de vezes que
+$x$ ocorre na matriz. 
+- Se um valor ocorrer mais de uma vez, então a matriz possui elementos repetidos. 
+
+---
+### Elementos repetidos
+
+Função para contar o número de vezes que $v$ ocorre na matriz:
+
+```
+int ocorre(int M[][TAM], int v, int n, int m){
+    int cont =0;
+   for(int i=0; i < n; i++){
+    for(int j=0; j < m; j++){
+        if (M[i][j]==v)
+            cont ++;
+    }
+   }
+   return cont;
+}
+```
+---
+### Elementos repetidos
+
+Utilizando a função anterior, podemos determinar se a matriz possui ou não elementos
+repetidos:
+
+```
+bool repetidos(int M[][TAM], int n, int m){
+   for(int i=0; i < n; i++){
+    for(int j=0; j < m; j++){
+        if (ocorre(M, M[i][j], n ,m) >1)
+            return true;
+    }
+   }
+   return false;
+}
+```
+
+---
+### Elementos repetidos
+
+Exemplo de uso:
+
+```cpp
+int main(){
+    int M[TAM][TAM] = { {1,2,3},{4,2,6},{7,8,9}};
+    if(repetidos(M,3,3))
+        cout << "sim" << endl;
+    else
+        cout << "não" << endl;
+
+}
+```
+---
+### Elementos repetidos
+
+Exemplo de uso:
+
+```cpp
+int main(){
+    int M[TAM][TAM];
+    int lin, col;
+    cin >> lin >> col;
+    ler(M, lin, col);
+
+    if(repetidos(M,lin,col))
+        cout << "sim" << endl;
+    else
+        cout << "não" << endl;
+}
+```
+---
+### Linhas Iguais
+
+Escreva uma função que recebe uma matriz $M$, o seu número de linhas e colunas, e
+retorna true se $M$ possui duas linhas iguais e false caso contrário.
+
+---
+### Linhas Iguais
+- Vamos implementar uma função que, dadas duas linhas l1 e l2, determine se elas são iguais
+- Depois, utilizaremos essa função para resolver o problema
+
+---
+### Linhas Iguais
+Aqui temos uma função que compara se __2 vetores__ são iguais
+
+```
+bool linhasIguais(int v1[], int v2[], int n){
+    for(int i=0 ; i < n ; i++){
+        if(v1[i]!=v2[i])
+            return false;
+    }
+    return true;
+}
+```
+---
+### Linhas Iguais
+- Como podemos utilizar essa função com as _linhas de uma matriz?_
+- Lembre que $M[i]$ representa um vetor (a linha $i$ da matriz)
+
+---
+### Linhas Iguais
+```
+bool matrizl(int M[][Max],int nl,int nc){
+    for(int i=0 ; i < nl ;i++){
+        for(int j=i+1 ; j < nl ; j++){
+            if(linhasIguais(M[i], M[j], nc))
+                return true;
+        }
+    }
+    return false;
+}
+```
+
+Note o uso de `M[i]` e `M[j]`
+
+---
+### Linhas Iguais
+Uma alternativa:
+
+```
+bool linhasIguais(int M[][TAM], int l1, int l2,  int n){
+    for(int i=0; i < n;i++){
+        if(M[l1][i]!=M[l2][i])
+            return false;
+    }
+    return true;
+}
+```
+---
+### Linhas Iguais
+Uma alternativa:
+```
+bool matrizl(int M[][Max],int nl,int nc){
+    for(int i=0; i < nl;i++){
+        for(int j=i+1 ; j < nl;j++){
+            if(linhasIguais(M, i, j , nc))
+                return true;
+        }
+    }
+    return false;
+}
+```
+---
+### Xadrez e torres
+- No xadrez a torre se move em linha reta horizontalmente e verticalmente.
+-  Considere uma matriz quadrada M de dimensão n x n (n <= 100) que representa um tabuleiro de xadrez no qual podemos colocar torres da _mesma cor_.
+- Um número 1 na matriz representa uma posição com uma torre e um 0 representa um espaço livre. 
+---
+### Xadrez e torres
+- Faça uma função que, dado um tabuleiro de dimensão n x n, determine (retornando true/false) se alguma das torres pode atacar outra torre. Por exemplo, no tabuleiro
+
+Retorna: true
+```cpp
+0 1 0 1 <-- ataque
+0 0 0 0
+0 0 1 0
+0 0 0 0
+```
+Retorna: false:
+```cpp
+0 1 0
+1 0 0
+0 0 1
+```
+---
+### Xadrez e torres
+- Vamos contar o número de 1's por cada linha e por cada coluna
+- Se esse contador for maior que um, as torres podem atacar-se
+
+---
+### Xadrez e torres
+Função para verificar uma linha:
+```cpp
+bool linhaOK(int v[], int n){
+    int soma=0;
+    for(int i=0; i < n;i++){
+        if (v[i]!=0 && v[i]!=1)
+            return false;
+        soma+= v[i];
+    }
+    return soma <= 1;
+}
+```
+
+---
+### Xadrez e torres
+Função para verificar uma coluna:
+```cpp
+bool colOK(int M[][MAX], int col, int n){
+    int soma=0;
+    for(int i=0; i < n;i++){
+        if (M[i][col]!=0 && M[i][col]!=1)
+            return false;
+        soma+= M[i][col];
+    }
+    return soma <= 1 ;
+}
+```
+
+---
+### Xadrez e torres
+Agora só precisamos utilizar as funções anteriores:
+
+```cpp
+// Retorna true se alguma torre pode atacarse
+// Note que as funções OK retornam true se nenhuma torre pode atacar-se
+bool torres(int M[][MAX], int n){
+    // Linhas
+    for(int i=0; i < n;i++){
+        if (!linhaOK(M[i],n))
+            return true;
+    }
+    // Colunas
+    for(int i=0;i < n;i++){
+        if (!colOK(M,i, n))
+            return true;
+    }
+    return false;
+}
+```
+---
+### Multiplicação de matrizes
+
+Faça uma função para multiplicar duas matrizes. 
+
+Lembre: $M \times N$ faz sentido sim:
+ - $M$ é de dimensão $a \times b$
+ - $N$ é de dimensão $b \times c$
+ - O resultado $M\times N$ é de dimensão $a \times c$
+
+---
+### Multiplicação de matrizes
+O resultado $R = M \times N$:
+- A posição $R[i][j]$ corresponde ao produto escalar da linha $i$ de $M$ e a coluna $j$ de $N$.
+
+```
+               - x - -
+- - - - -      - x - -
+x x x x x   *  - x - -
+- - - - -      - x - -
+               - x - -
+```
+
+---
+### Multiplicação de matrizes
+
+- Entradas: As matrizes M e N
+- As dimensões: a,b,c
+- Saídas: A matriz $M \times N$
+
+---
+### Multiplicação de matrizes
+```cpp
+void mult(int M1[][TAM], int M2[][TAM], int nlm1, ncm1, ncm2, int M3[][TAM]){
+    for(int i=0 ; i < nlm1 ; i++){
+        for(int j=0 ; j < ncm2 ; j++){
+            // Produto escalar: 
+            // linha i de M1 coluna j de M2
+            int soma = 0;
+            for (int k = 0 ; k < ncm1 ; k++){
+                soma += M1[i][k] * M2[k][j];
+            }
+            M3[i][j] = soma;
+        }
+    }
+
+}
+```
+---
+### Multiplicação de matrizes
+Note que o último parâmetro da função será utilizado como saída: 
+
+```cpp
+int main(){
+    int A[TAM][TAM], B[TAM][TAM], C[TAM][TAM];
+    int la,ca,cb;
+    ler(A, la, ca);
+    ler(B, ca, cb);
+    mult(A,B,;a,ca,cb,C);
+    imprimir(C, a, c);
+    return 0;
+}
+```
+
+---
+### Teste!
+<https://multiprova.ufrn.br/>
