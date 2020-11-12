@@ -51,3 +51,6 @@ Este diretório contem alguns slides para complementar os vídeos da disciplina 
 ## [10 Funções e vetores](10-vetores-funcoes)
  - Vetores e matrizes como parâmetros de funções
 
+## [11 Tipos Estruturados](11-tipos-estruturados)
+ - Definição de tipos
+ - Tipos estruturados como parâmetros de funções
