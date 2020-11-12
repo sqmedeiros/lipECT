@@ -2,8 +2,7 @@
 
 ## Vídeos:
 
-1. []()
-2. []()
+1. [Como definir uma estrutura, declarar variáveis e acessar seus campos](https://youtu.be/kh3Z2ywZJmI)
 
 
 ## Exercícios
