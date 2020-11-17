@@ -1,4 +1,4 @@
-# Aula 19 - Tipos Estruturados
+# Aula 20 - Tipos Estruturados Exercícios
 
 ## Vídeos:
 
