@@ -54,3 +54,8 @@ Este diretório contem alguns slides para complementar os vídeos da disciplina 
 ## [11 Tipos Estruturados](11-tipos-estruturados)
  - Definição de tipos
  - Tipos estruturados como parâmetros de funções
+
+## [12 Ordenação](12-ordenacao)
+ - Ordenar vetores
+ - Algoritmos Bolha, Seleção e Inserção, 
+ 
