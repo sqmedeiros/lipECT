@@ -49,7 +49,6 @@ Em cada iteração o maior elemento _flutua_ até a última posição.
 
 <img src=bbsort.png height=550/>
 
-
 ---
 
 <iframe width="1186" height="667" src="https://www.youtube.com/embed/lyZQPjUT5B4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -303,8 +302,9 @@ bool repetido (int v[], int n){
               return true;
           }
       }
-      return false;
   }
+  return false;
+}
 ```
 ---
 ### Elementos repetidos
@@ -326,7 +326,7 @@ Agora só precisamos percorrer de esquerda a direita!
 ```
 // V deve estar ordenado
 bool repetido(int v[], int n){
-  for (i=0 ; i < n -  ; i++){
+  for (i=0 ; i < n - 1 ; i++){
       if (v[i] == v[i+1])
           return true;
   }
