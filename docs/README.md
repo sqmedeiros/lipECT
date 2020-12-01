@@ -59,5 +59,5 @@ Este diretório contem alguns slides para complementar os vídeos da disciplina 
  - Ordenar vetores
  - Algoritmos Bolha, Seleção e Inserção, 
  
-## [13 Recursão)(13-recursao/rec.pdf)
+## [13 Recursão](13-recursao/rec.pdf)
  - Funções recursivas
